@@ -1,0 +1,52 @@
+body{
+	@include set-colors();
+}
+.wrapper{
+    width:100%;
+    max-width:980px;
+    margin:0 auto;
+    //background-color: red;
+    header &{
+    	background-color: transparent;
+    }
+}
+
+header{
+	width: 100%;
+	@include set-colors(white, $color-base);
+	h1{
+		padding: 10px percentage(20px/980px);
+		font-weight:normal;
+		font-size: 2rem;
+		line-height: 1.75em;
+		font-weight:300;
+	}
+}
+
+main{
+	width:percentage(960px/980px);
+	margin:percentage(10px/960px) auto;
+	h2{
+		padding: 10px percentage(10px/960px);
+	}
+	img{
+		display: block;
+		width: percentage(300px/960px);
+		margin: percentage(10px/960px);
+		cursor: pointer;
+		float:left;
+	}
+}
+
+footer{
+	width:100%;
+	@include set-colors(white, $color-base);
+	.wrapper{
+		background-color: transparent;
+	}
+	p{
+		padding: 10px percentage(20px/980px);
+	}
+}
+
+
